@@ -33,14 +33,8 @@ while True:
         c_w = width / 2 + y * 100
         c_h = height / 2 + x * 100
         frame = cv2.resize(frame, (width, height))
-   
         frame = cv2.circle(frame, (int(c_w), int(c_h)), 25, (0, 0, 255), -1)
-
-
-
         cv2.imshow("frame", frame)
-        time.sleep(0.001)
-
     except Exception as e:
         print(e)
 
